@@ -1884,12 +1884,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .responsive-img {
-  width: 100%;
-  height: auto;
-  max-width: 800px; /* Adjust as needed */
-  display: block;
-  margin: 20px auto;
-  border: 1px solid #ddd; /* Optional border */
-  border-radius: 5px; /* Optional rounded corners */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%; /* Makes the image responsive */
+  max-width: 600px; /* Limits the max width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Prevents inline spacing issues */
+  margin: 20px auto; /* Centers the image */
+  border-radius: 5px; /* Optional: Rounds the corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
 }
