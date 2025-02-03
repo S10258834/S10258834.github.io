@@ -157,3 +157,43 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Get elements
+const modal = document.getElementById("projectModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalTitl = document.getElementById("modalTitle");
+  const modalDescription = document.getElementById("modalDescription");
+  const closeModal = document.querySelector(".close-modal");
+
+  // Select all project items
+  document.querySelectorAll(".project-item a").forEach(item => {
+    item.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default link behavior
+
+      // Get project details
+      let project = this.closest(".project-item");
+      let imgSrc = project.querySelector("img").src;
+      let title = project.querySelector(".project-title").textContent;
+      let description = this.getAttribute("data-description") || "No description available.";
+
+      // Update modal content
+      modalImage.src = imgSrc;
+      modalTitl.textContent = title;
+      modalDescription.textContent = description;
+
+      // Show modal
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close modal when clicking the close button
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside modal content
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });

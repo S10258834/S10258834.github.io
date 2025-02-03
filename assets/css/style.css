@@ -1890,3 +1890,73 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: block; /* Prevents inline spacing issues */
   margin: 20px auto; /* Centers the image */
 }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: black; /* Black background */
+  color: white; /* White text */
+  padding: 25px;
+  border-radius: 15px; /* Slightly rounded edges */
+  width: 60%; /* Moderate width */
+  max-width: 600px; /* Prevent it from getting too large */
+  max-height: 80vh; /* Prevents it from being too tall */
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Close Button Positioned at Top Right */
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: none;
+}
+
+/* Modal Image - Centered */
+.modal-content img {
+  max-width: 90%;
+  max-height: 40vh; /* Prevents too tall images */
+  border-radius: 10px;
+  margin: 10px auto; /* Centers the image */
+  display: block;
+}
+
+/* Modal Title */
+#modalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Modal Description */
+#modalDescription {
+  font-size: 16px;
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+

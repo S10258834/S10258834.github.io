@@ -379,7 +379,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Cybersecurit</button>
+                <button data-select-item>Cybersecurity</button>
               </li>
 
               <li class="select-item">
@@ -392,119 +392,99 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" data-description="A fun and interactive mix and match game built using JavaScript.">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/mixmatch.jpg" alt="game" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Mix and match game</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title">Mix and Match Game</h3>
+                <p class="project-category">Web Development</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" data-description="A dynamic and responsive website designed for a fictional tour agency, featuring interactive maps and booking functionality.">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/Tour.jpg" alt="tour website" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Tour Agency Website</h3>
-
-                <p class="project-category">Web development</p>
-
+                <p class="project-category">Web Development</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="network security">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="network security">
+              <a href="#" data-description="Implementation of Wazuh SIEM to monitor and detect security threats in real-time across enterprise networks.">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/Wazuh.jpg" alt="Wazuh" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Wazuh SIEM</h3>
-
                 <p class="project-category">Network Security</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="network security">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="network security">
+              <a href="#" data-description="Configuration and deployment of Palo Alto Next-Generation Firewalls to enhance network security policies and prevent cyber threats.">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/PaloAlto.jpg" alt="PaloAlto" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Palo Alto Firewall</h3>
-
                 <p class="project-category">Network Security</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="cybersecurity">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="cybersecurity">
+              <a href="#" data-description="A hands-on reverse engineering project analyzing malware behavior.">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/Malware.jpg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Malware.jpg" alt="Malware Analysis" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Reverse Engineering</h3>
-
                 <p class="project-category">Cybersecurity</p>
-
               </a>
             </li>
 
             
 
-            <li class="project-item  active" data-filter-item data-category="cybersecurity">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="cybersecurity">
+              <a href="#" data-description="Utilizing Burp Suite for penetration testing, including web vulnerability scanning, exploit analysis, and security assessments.">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/Burp.jpg" alt="Burp Suite" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Penetration Testing</h3>
-
                 <p class="project-category">Cybersecurity</p>
-
               </a>
             </li>
-
           </ul>
 
         </section>
+        <!-- Modal Structure -->
+        <div id="projectModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <figure>
+              <img id="modalImage" src="" alt="Project Image">
+            </figure>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+          </div>
+        </div>
 
       </article>
 
